@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  import CDefaultTooltip from './CDefaultTooltip.vue';
+
   const props = withDefaults(
     defineProps<{
       label?: string;
@@ -25,6 +27,6 @@
     :dense="props.dense"
     @click="emit('on-click')"
   >
-    <q-tooltip v-if="props.tooltip">{{ props.tooltip }}</q-tooltip>
+    <c-default-tooltip :tooltip="props.tooltip" />
   </q-btn>
 </template>

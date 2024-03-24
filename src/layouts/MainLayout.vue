@@ -23,10 +23,12 @@
           <c-default-btn
             icon="fa-brands fa-github"
             dense
+            tooltip="GitHub"
           />
           <c-default-btn
             icon="fa-brands fa-linkedin"
             dense
+            tooltip="LinkedIn"
           />
         </div>
       </q-toolbar>
